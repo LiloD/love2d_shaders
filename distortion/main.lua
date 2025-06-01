@@ -71,6 +71,7 @@ function love.draw()
         distortion_uv_shader:send("u_strength", strength)
         love.graphics.draw(canvas, 0, 0)
     end)
+
     utils.withShader(distortion_mag_shader, function()
         distortion_mag_shader:send("u_tightness", tightness)
         love.graphics.draw(canvas, 0, h)
