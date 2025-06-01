@@ -2,8 +2,6 @@
 
 ## CircelSDF
 
-![box sdf](../docs/sdf/box_sdf.png)
-
 ```glsl
 float circleSDF(vec2 p, float r) {
     return length(p) - r;
